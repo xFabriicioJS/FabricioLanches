@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -41,8 +41,8 @@ namespace SeunomeLanches
             fila.Enqueue(lanche2);
             fila.Enqueue(lanche3);
 
-            foreach (object pedido in fila)
-                Console.WriteLine($"Seu pedido é :"); 
+            foreach (var pedido in fila)
+                Console.WriteLine($"O pedido é de um {pedido.Name}, com o valor de R${pedido.Value}, tendo o código de: {pedido.Id} ");
             Console.ReadKey();
             
         }
